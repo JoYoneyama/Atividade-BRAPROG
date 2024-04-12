@@ -1,4 +1,4 @@
-		#include<stdio.h>
+		#include<stdio.h> yo
 		#include<stdlib.h>
 		#include<locale.h>
 		
@@ -12,7 +12,7 @@
 			printf("\nInsira o valor desejado: ");
 			scanf("%f", &valor);
 			
-			for(m05=0.05; m05<=valor+0.001; m05=m05+0.05){ //valor+0.001 pq a soma de vários 0.05 causa imprecisão no cálculo
+			for(m05=0.05; m05<=valor+0.001; m05=m05+0.05){ //valor+0.001 pq a soma de vÃ¡rios 0.05 causa imprecisÃ£o no cÃ¡lculo
 				
 				moeda05++;
 		
