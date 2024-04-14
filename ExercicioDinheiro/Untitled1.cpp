@@ -14,13 +14,13 @@
 			
 			for(m05=0; m05 <= valor+0.001; m05=m05+0.05){
 				
-				for(m10=0; m05+m10 <= valor+0.001; m10=m10+0.1){
+				for(m10=0; m10 <= valor+0.001; m10=m10+0.1){
 					
-					for(m25=0; m05+m10+m25 <= valor; m25=m25+0.25){
+					for(m25=0; m25 <= valor; m25=m25+0.25){
 						
-						for(m50=0; m05+m10+m25+m50 <= valor; m50=m50+0.5){
+						for(m50=0; m50 <= valor; m50=m50+0.5){
 							
-							for(m1=0; m05+m10+m25+m50+m1 <= valor; m1++){
+							for(m1=0; m1 <= valor; m1++){
 								
 								if(valor == m1+m50+m25+m10+m05){
 									
