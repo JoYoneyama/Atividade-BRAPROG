@@ -6,7 +6,7 @@
 			
 			setlocale(LC_ALL, "Portuguese");
 			
-			int moeda05=0, moeda10=0, moeda25=0, moeda50=0, moeda1=0, possib=0;
+			int moeda05, moeda10, moeda25, moeda50, moeda1, possib=0;
 			float m05, m10, m25, m50, m1, valor;
 			
 			printf("Digite um valor: R$");
@@ -25,8 +25,13 @@
 								if(valor == m1+m50+m25+m10+m05){
 									
 									possib++;
+									moeda05=m05/0.05;
+									moeda10=m10/0.1;
+									moeda25=m25/0.25;
+									moeda50=m50/0.5;
+									moeda1=m1/1;
 									
-									printf("\n%d. R$1,00: %.2f - R$0,50: %.2f - R$0,25: %.2f - R$0,10: %.2f - R$0,05: %.2f\n", possib, m1, m50, m25, m10, m05);	
+									printf("\n%d. R$1,00: %d - R$0,50: %d - R$0,25: %d - R$0,10: %d - R$0,05: %d\n", possib, moeda1, moeda50, moeda25, moeda10, moeda05);	
 									
 								}
 
