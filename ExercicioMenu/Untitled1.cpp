@@ -18,6 +18,20 @@
 		
 		system("cls");
 		
+		while(codigo < 1 || codigo >6){
+			
+			printf("MENU\n");
+			printf("------------------------------\n");
+			printf("Faça seu pedido: \n");
+			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+			printf("Digite um código válido\n\n");
+			printf("Número: ");
+			scanf("%d", &codigo);
+		
+			system("cls");
+			
+		}
+		
 		switch(codigo){
 			
 			case 1:
@@ -71,19 +85,30 @@
 				}while(sair != 1 || sair != 2);					
 				break;
 				
-			default:
-				break;
-				
 		}
 		
 		do{
 			
-			system("cls");
-			
-			printf("\nAdicionar ao pedido: \n");
+			printf("Total: R$%.2f", valor);
+			printf("\n\nAdicionar ao pedido: \n");
 			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
 			printf("Número: ");
 			scanf("%d", &codigo);
+			
+			system("cls");
+			
+			while(codigo < 1 || codigo > 6){
+				
+				printf("Total: R$%.2f", valor);
+				printf("\n\nAdicionar ao pedido: \n");
+				printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+				printf("digite um número válido\n\n");
+				printf("Número: ");
+				scanf("%d", &codigo);
+			
+				system("cls");
+				
+			}
 			
 			switch(codigo){
 			
@@ -108,14 +133,14 @@
 					break;
 				
 				case 6:
-					do{
-					
-						system("cls");
+					do{			
 					
 						printf("\nFinalizando pedido. Tem certeza?\n");
 						printf("1. Sim\n2. Não");
 						printf("\n\nNúmero: ");
 						scanf("%d", &sair);
+						
+						system("cls");
 					
 						if(sair == 1){
 						
@@ -131,6 +156,8 @@
 						
 						}else{
 						
+							system("cls");
+							
 							printf("Digite um código válido\n");
 						
 						}
