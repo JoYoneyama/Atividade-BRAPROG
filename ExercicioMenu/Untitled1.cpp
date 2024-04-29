@@ -1,6 +1,7 @@
 	#include<stdio.h>
 	#include<stdlib.h>
 	#include<locale.h>
+	#include<cstdlib>  // adiciona o pressione qualquer tecla para sair
 	
 	int main(){
 		
@@ -12,18 +13,18 @@
 		printf("MENU\n");
 		printf("------------------------------\n");
 		printf("Faça seu pedido: \n");
-		printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+		printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Lista de pedidos\n7. Finalizar pedido\n\n");
 		printf("Número: ");
 		scanf("%d", &codigo);
 		
 		system("cls");
 		
-		while(codigo < 1 || codigo >6){
+		while(codigo < 1 || codigo >7){
 			
 			printf("MENU\n");
 			printf("------------------------------\n");
 			printf("Faça seu pedido: \n");
-			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Lista de pedidos\n7. Finalizar pedido\n\n");
 			printf("Digite um código válido\n\n");
 			printf("Número: ");
 			scanf("%d", &codigo);
@@ -55,6 +56,12 @@
 				break;
 				
 			case 6:
+				printf("Você ainda não fez nenhum pedido\n\n");
+				system("pause");
+				system("cls");
+				break;
+				
+			case 7:
 				do{
 					
 					printf("\nVocê ainda não fez nenhum pedido. Tem certeza?\n");
@@ -89,19 +96,17 @@
 		
 		do{
 			
-			printf("Total: R$%.2f", valor);
-			printf("\n\nAdicionar ao pedido: \n");
-			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+			printf("\nAdicionar ao pedido: \n");
+			printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Lista de pedidos\n7. Finalizar pedido\n\n");
 			printf("Número: ");
 			scanf("%d", &codigo);
 			
 			system("cls");
 			
-			while(codigo < 1 || codigo > 6){
+			while(codigo < 1 || codigo > 7){
 				
-				printf("Total: R$%.2f", valor);
-				printf("\n\nAdicionar ao pedido: \n");
-				printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Finalizar pedido\n\n");
+				printf("\nAdicionar ao pedido: \n");
+				printf("1. Sanduíche natural - R$5,00\n2. X-Salada - R$15,00\n3. Refrigerante - R$3,50\n4. Suco - R$3,00\n5. Sorvete - R$9,00\n6. Lista de pedidos\n7. Finalizar pedido\n\n");
 				printf("digite um número válido\n\n");
 				printf("Número: ");
 				scanf("%d", &codigo);
@@ -133,6 +138,13 @@
 					break;
 				
 				case 6:
+					printf("Pedidos:\n\n");
+					printf("Total: R$%.2f\n\n", valor);
+					system("pause");
+					system("cls");
+					break;
+					
+				case 7:
 					do{			
 					
 						printf("\nFinalizando pedido. Tem certeza?\n");
