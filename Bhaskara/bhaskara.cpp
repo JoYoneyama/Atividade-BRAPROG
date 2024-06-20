@@ -22,6 +22,7 @@
 					*/	
 												
 					printf("Equação de 2º grau (Bháskara)");
+					printf("\n===================================");
 					printf("\nInforme os valores das incógnitas A, B e C");
 					printf("\n\nA: ");
 					scanf("%f", &A);
